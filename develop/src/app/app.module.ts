@@ -18,7 +18,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { HomeComponent } from './pages/home/home.component';
 import { PagesComponent } from './pages/pages.component';
-import { PreloadAllModules, RouterModule, ROUTES } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { PlannerModule } from './features/planner/planner.module';
 
 @NgModule({

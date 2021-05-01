@@ -23,10 +23,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
 import { PlannerComponent } from './planner.component';
+import { EventsListComponent } from './events/events-list/events-list.component';
+import { EventsFormComponent } from './events/events-form/events-form.component';
 
 
 @NgModule({
-  declarations: [SpeakersListComponent, SpeakersFormComponent, DashboardComponent, PlannerComponent],
+  declarations: [SpeakersListComponent, SpeakersFormComponent, DashboardComponent, PlannerComponent, EventsListComponent, EventsFormComponent],
   imports: [
     CommonModule,
     PlannerRoutingModule,
