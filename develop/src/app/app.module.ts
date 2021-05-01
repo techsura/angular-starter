@@ -20,6 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PagesComponent } from './pages/pages.component';
 import { RouterModule } from '@angular/router';
 import { PlannerModule } from './features/planner/planner.module';
+import { ShoppingModule } from './features/shopping/shopping.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PlannerModule } from './features/planner/planner.module';
     MatPaginatorModule,
     MatSortModule,
     RouterModule,
-    PlannerModule
+    PlannerModule,
+    ShoppingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

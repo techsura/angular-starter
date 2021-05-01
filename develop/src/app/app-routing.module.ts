@@ -10,6 +10,9 @@ const routes: Routes = [
   {
     path: 'planner', loadChildren: './features/planner/planner.module#PlannerModule'//<- Other routes here
   },
+  {
+    path: 'shopping', loadChildren: './features/shopping/shopping.module#ShoppingModule'//<- Other routes here
+  },
 ];
 
 @NgModule({

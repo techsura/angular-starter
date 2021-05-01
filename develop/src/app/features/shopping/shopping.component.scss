@@ -1,9 +1,23 @@
+$primary-color:#1faa00;
+
+.container{
+  padding: 20px;
+}
+
 .sidenav-container {
   height: 100%;
 }
 
 .sidenav {
   width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: $primary-color;
+}
+
+.mat-toolbar.mat-primary {
+  background: $primary-color;
 }
 
 .mat-toolbar.mat-primary {
