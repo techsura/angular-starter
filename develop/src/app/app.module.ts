@@ -4,30 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { ContactsComponent } from './contacts/contacts.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PagesComponent } from './pages/pages.component';
+import { PreloadAllModules, RouterModule, ROUTES } from '@angular/router';
+import { PlannerModule } from './features/planner/planner.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DashboardComponent,
-    ContactsComponent,
-    LayoutComponent
+    PagesComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +42,9 @@ import { LayoutComponent } from './layout/layout.component';
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    RouterModule,
+    PlannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
