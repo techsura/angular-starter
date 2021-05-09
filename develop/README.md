@@ -15,3 +15,5 @@
 `ng generate component pages`
  
 `ng generate component pages/home`
+
+https://jasonwatmore.com/post/2020/12/15/angular-11-crud-example-with-reactive-forms
