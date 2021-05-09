@@ -21,6 +21,7 @@ import { PagesComponent } from './pages/pages.component';
 import { RouterModule } from '@angular/router';
 import { PlannerModule } from './features/planner/planner.module';
 import { ShoppingModule } from './features/shopping/shopping.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ShoppingModule } from './features/shopping/shopping.module';
     MatSortModule,
     RouterModule,
     PlannerModule,
-    ShoppingModule
+    ShoppingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

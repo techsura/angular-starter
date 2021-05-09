@@ -25,6 +25,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { PlannerComponent } from './planner.component';
 import { EventsListComponent } from './events/events-list/events-list.component';
 import { EventsFormComponent } from './events/events-form/events-form.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { EventsFormComponent } from './events/events-form/events-form.component'
     MatListModule,
     MatGridListModule,
     MatExpansionModule,
-    MatMenuModule
+    MatMenuModule,
+    SharedModule
   ]
 })
 export class PlannerModule { }

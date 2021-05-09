@@ -25,6 +25,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     ReactiveFormsModule,
     MatGridListModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    SharedModule
   ]
 })
 export class ShoppingModule { }

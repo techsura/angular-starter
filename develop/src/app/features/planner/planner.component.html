@@ -49,27 +49,12 @@
       <span>v1</span>
 
       <span class="menu-spacer"></span>
+
       <!-- My Account Menu -->
-      <button mat-button [matMenuTriggerFor]="menu">My Account</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-      </mat-menu>
+      <tm-my-account></tm-my-account>
 
       <!-- Application Switcher Menu -->
-      <button mat-icon-button [matMenuTriggerFor]="appSwitcherMenu" aria-label="Example icon-button with a menu">
-        <mat-icon>apps</mat-icon>
-      </button>
-      <mat-menu #appSwitcherMenu="matMenu">
-        <a mat-menu-item href="planner">
-          <mat-icon>event</mat-icon>
-          <span>Planner</span>
-        </a>
-        <a mat-menu-item href="shopping">
-          <mat-icon>shopping_basket</mat-icon>
-          <span>Shopping</span>
-        </a>
-      </mat-menu>
+      <tm-app-switch activeApp="planner"></tm-app-switch>
 
     </mat-toolbar>
     <!-- Add Content Here -->

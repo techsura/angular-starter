@@ -1,0 +1,13 @@
+<button mat-icon-button [matMenuTriggerFor]="appSwitcherMenu" aria-label="Example icon-button with a menu">
+  <mat-icon>apps</mat-icon>
+</button>
+<mat-menu #appSwitcherMenu="matMenu">
+  <a mat-menu-item href="planner" [disabled]="activeApp=='planner'">
+    <mat-icon>event</mat-icon>
+    <span>Planner</span>
+  </a>
+  <a mat-menu-item href="shopping" [disabled]="activeApp=='shopping'">
+    <mat-icon>shopping_basket</mat-icon>
+    <span>Shopping</span>
+  </a>
+</mat-menu>
