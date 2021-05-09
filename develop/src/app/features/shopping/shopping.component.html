@@ -1,0 +1,62 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar color="primary">Shopping List</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/shopping/dashboard">Dashboard</a>
+      </mat-nav-list>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Items
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-selection-list [multiple]="false">
+            <mat-list-option mat-list-item routerLink="/shopping/items" routerLinkActive="active">Manage Items</mat-list-option>
+            <mat-list-option mat-list-item routerLink="/shopping/items-form">Add Item</mat-list-option>
+          </mat-selection-list>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Catergories
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-selection-list [multiple]="false">
+            <mat-list-option mat-list-item routerLink="/shopping/categories" routerLinkActive="active">Manage Categories</mat-list-option>
+            <mat-list-option mat-list-item routerLink="/shopping/categories-form">Add Category</mat-list-option>
+          </mat-selection-list>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>v1</span>
+
+      <span class="menu-spacer"></span>
+
+      <!-- My Account Menu -->
+      <tm-my-account></tm-my-account>
+
+      <!-- Application Switcher Menu -->
+      <tm-app-switch activeApp="shopping"></tm-app-switch>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
